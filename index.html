@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- boxicon css link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Link Swiper's CSS -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -59,30 +59,38 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
     <section class="about" id="about">
-        <div class="about-content">
-            <h2 class="heading">About Our Courses</h2>
-            <div class="about-btn">
-                <button class="active">Programming Languages</button>
-                <button>Basic Computer</button>
-            </div>
-            <div class="content-btn">
-                <div class="content">
-                    <div class="text-box">
-                        <p>Programming Languages</p>
-                        <span>C, C++, Python, Java, SQL, Cloud Computing</span>
-                    </div>
+    <div class="about-content">
+        <h2 class="heading">About Our Courses</h2>
+        
+        <!-- Buttons to toggle content -->
+        <div class="about-btn">
+            <button class="active" data-tab="prog">Programming Languages</button>
+            <button data-tab="basic">Basic Computer Course</button>
+        </div>
+
+        <!-- Content for each tab -->
+        <div class="content-btn">
+            <!-- Programming Languages -->
+            <div class="content active" id="prog">
+                <div class="text-box">
+                    <p>Programming Languages</p>
+                    <span>C, C++, Python, Java, SQL, Cloud Computing</span>
+                    <p>Basics:</p>
+                    <span>Word, Excel, PowerPoint</span>
                 </div>
-                <div class="content">
-                    <div class="text-box">
-                        <p>Basic Computer Course</p>
-                        <span>Word, Excel, PowerPoint, Basic School Computer Knowledge</span>
-                    </div>
+            </div>
+
+            <!-- Basic Computer Course -->
+            <div class="content" id="basic">
+                <div class="text-box">
+                    <p>Basic Computer Course</p>
+                    <span>Word, Excel, PowerPoint, Basic School Computer Knowledge</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- SERVICES SECTION -->
     <section class="services" id="services">
@@ -100,9 +108,9 @@
                     <span></span>
                 </div>
                 <h3>BASIC SCHOOL BASED COMPUTER</h3>
-                <p>STATE, ICSE, CBSE school syllabus covered with complete basic computer knowledge.</p>
+                <p>STATE, ICSE, CBSE SCHOOL SYLLABUS</p>
                 <p class="fees"><strong>Fees:</strong> ₹250 per month</p>
-             
+        
             </div>
 
             <!-- SERVICE 2 -->
@@ -112,9 +120,9 @@
                     <span></span>
                 </div>
                 <h3>PROGRAMMING LANGUAGE</h3>
-                <p>JAVA, SQL, C, C++, PYTHON, CLOUD COMPUTING with practical hands-on training.</p>
+                <p>PYTHON/JAVA, SQL, UNIX</p>
                 <p class="fees"><strong>Fees:</strong> ₹800 for 8 months</p>
-         
+      
             </div>
 
             <!-- SERVICE 3 -->
@@ -123,21 +131,10 @@
                     <i class='bx bx-devices'></i>
                     <span></span>
                 </div>
-                <h3>FRONT END AND BACK END</h3>
-                <p>JavaScript, CSS, HTML, React and PHP development for full-stack learning.</p>
+                <h3>FRONT END</h3>
+                <p>JAVA SCRIPT, CSS, HTML, REACT AND PHP</p>
                 <p class="fees"><strong>Fees:</strong> ₹800 for 6 months</p>
-              
-            </div>
-
-            <!-- SERVICE 4 -->
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-user-voice'></i>
-                    <span></span>
-                </div>
-                <h3>COMMUNICATION SKILLS</h3>
-                <p>Build communication confidence and prepare for interviews and public speaking.</p>
-                <p class="fees"><strong>Fees:</strong> Contact For Details</p>
+         
             </div>
 
         </div>
