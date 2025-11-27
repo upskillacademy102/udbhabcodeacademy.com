@@ -12,6 +12,8 @@
 </head>
 <body>
     <div class="overlay"></div>
+
+    <!-- HEADER -->
     <header>
         <a href="#" class="logo"><span>UDBHAB </span>CODE ACADEMY</a>
         <ul class="navlist">
@@ -20,6 +22,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#register">Register</a></li>
         </ul>
         <div class="right-header">
             <a href="#" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
@@ -35,53 +38,30 @@
             <h3>Welcome To Our World</h3>
             <h1>Hi, We are UDBHAB CODE ACADEMY</h1>
             <div class="btn-box">
-                <a href="register.html" class="btn">Register Now <i class='bx bx-right-arrow-alt' ></i></a>
-                <a href="syllabus.pdf" target="_blank" class="btn d-CV">Download Syllabus <i class='bx bx-download'></i></a>
-            </div>
-            <div class="social-media">
-                <div class="bg-icon">
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <span></span>
-                </div>
-                <div class="bg-icon">
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <span></span>
-                </div>
-                <div class="bg-icon">
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <span></span>
-                </div>
-                <div class="bg-icon">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <span></span>
-                </div>
-            </div>
-        </div>
+             <div class="btn-box">
+    <a href="register-form.html" class="btn register-btn">
+        <i class='bx bx-user-plus'></i> Register Now
+    </a>
+</div>
+
+<!-- Syllabus Button -->
+<a href="https://docs.google.com/spreadsheets/d/1KG7jAmKbufdF0nessL817yK6qmuDlMwf0GxWkTA1Bro/edit?usp=sharing" 
+   target="_blank" 
+   class="btn syllabus-btn">
+   <i class='bx bx-file'></i> View Syllabus
+</a>
+
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <div class="about-content">
-            <h2 class="heading">About Our Courses</h2>
-            <div class="about-btn">
-                <button class="active" data-tab="prog">Programming Languages</button>
-                <button data-tab="basic">Basic Computer Course</button>
-            </div>
-            <div class="content-btn">
-                <div class="content active" id="prog">
-                    <div class="text-box">
-                        <p>Programming Languages</p>
-                        <span>C, C++, Python, Java, SQL, Cloud Computing</span>
-                        <p>Basics:</p>
-                        <span>Word, Excel, PowerPoint</span>
-                    </div>
-                </div>
-                <div class="content" id="basic">
-                    <div class="text-box">
-                        <p>Basic Computer Course</p>
-                        <span>Word, Excel, PowerPoint, Basic School Computer Knowledge</span>
-                    </div>
-                </div>
+            <h2 class="heading">About Ourselves</h2>
+            <div class="text-box">
+                <p><strong>Address:</strong> Rajoshree Apartment (Ground Floor), Barrackpore, Masjid More (Opposite of Lenskart), Kolkata – 700122</p>
+                <p><strong>Contact Number:</strong> +91 89813 84208</p>
+                <p><strong>Email:</strong> upskillacademy102@gmail.com</p>
+                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/17myuPoP3X/" target="_blank" style="color: blue;">UDBHAB CODE ACADEMY</a></p>
             </div>
         </div>
     </section>
@@ -129,103 +109,60 @@
             <h2 class="heading">Our Projects</h2>
             <span>What We Have Done</span>
         </div>
-        <div class="fillter-buttons">
-            <button class="button mixitup-control-active" data-filter="all">All Work</button>
-            <button class="button" data-filter=".web">Web Development</button>
-            <button class="button" data-filter=".uiux">Automations</button>
-            <button class="button" data-filter=".branding">Digital Marketing</button>
-        </div>
-
         <div class="portfolio-gallery">
-            <div class="portfolio-box mix uiux">
-                <div class="portfolio-content">
-                    <h3>Automations 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/1.jpg" alt="Automation Project 1">
-                </div>
-            </div>
+            <!-- Add your portfolio items here -->
+        </div>
+    </section>
 
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/2.jpg" alt="Web Design Project">
-                </div>
-            </div>
+    <!-- REGISTER FORM SECTION -->
+    <section class="register" id="register">
+        <div class="register-container">
+            <h2>Registration Form</h2>
+            <form action="https://formsubmit.co/upskillacademy102@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thankyou.html">
 
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>Web Development 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/3.jpg" alt="Web Development Project 1">
-                </div>
-            </div>
+                <label>Your Name:</label>
+                <input type="text" name="Full Name" required>
 
-            <div class="portfolio-box mix web">
-                <div class="portfolio-content">
-                    <h3>Web Development 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/4.jpg" alt="Web Development Project 2">
-                </div>
-            </div>
+                <label>Qualification:</label>
+                <input type="text" name="Qualification" required>
 
-            <div class="portfolio-box mix uiux">
-                <div class="portfolio-content">
-                    <h3>Automations 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/5.jpg" alt="Automation Project 2">
-                </div>
-            </div>
+                <label>Area of Interest:</label>
+                <input type="text" name="Area of Interest" required>
 
-            <div class="portfolio-box mix branding">
-                <div class="portfolio-content">
-                    <h3>Web Development 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="portfolio-img">
-                    <img src="img/portfolio/6.jpg" alt="Web Development Project 3">
-                </div>
-            </div>
+                <label>Phone Number:</label>
+                <input type="text" name="Phone Number" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="thankyou-message" style="display:none; text-align:center; margin-top:20px; color:green;">
+    Thank you! Your registration has been submitted successfully.
+</div>
+
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section class="down-box" id="contact">
-        <div class="contactSkills">
-            <div class="contact-info">
-                <div class="main-text">
-                    <h2 class="heading">Contact Us</h2>
-                    <span>Get in touch with us</span>
-                </div>
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                    </div>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="#" id="" cols="30" rows="10"></textarea>
-                    <div class="formBtn">
-                        <button type="submit" class="btn">Send Message</button>
-                    </div>
-                </form>
+        <div class="contact-info">
+            <div class="main-text">
+                <h2 class="heading">Contact Us</h2>
+                <span>Get in touch with us</span>
             </div>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea cols="30" rows="10"></textarea>
+                <div class="formBtn">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -234,11 +171,9 @@
         <p>Copyright © 2025 by <span>UDBHAB CODE ACADEMY</span> || All Rights Reserved.</p>
     </footer>
 
-    <!-- scroll reveal  -->
+    <!-- JS SCRIPTS -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- mixitup cdn js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="script.js"></script>
 </body>
